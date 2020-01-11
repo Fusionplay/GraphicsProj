@@ -1,0 +1,18 @@
+<RCC>
+    <qresource prefix="/icons">
+        <file>icons/椭圆形.png</file>
+        <file>icons/直线.png</file>
+        <file>icons/保存.png</file>
+        <file>icons/刷新.png</file>
+        <file>icons/红色.png</file>
+        <file>icons/蓝色.png</file>
+        <file>icons/绿色.png</file>
+        <file>icons/多边形.png</file>
+        <file>icons/平移.png</file>
+        <file>icons/曲线 B样条.png</file>
+        <file>icons/曲线 贝塞尔.png</file>
+        <file>icons/缩放.png</file>
+        <file>icons/旋转.png</file>
+        <file>icons/裁剪.png</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DrawWindow</class>
+ <widget class="QMainWindow" name="DrawWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1000</width>
+    <height>747</height>
+   </rect>
+  </property>
+  <property name="mouseTracking">
+   <bool>true</bool>
+  </property>
+  <property name="windowTitle">
+   <string>画布</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="mouseTracking">
+    <bool>true</bool>
+   </property>
+   <widget class="QWidget" name="dr_canvas" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1000</width>
+      <height>700</height>
+     </rect>
+    </property>
+    <property name="mouseTracking">
+     <bool>true</bool>
+    </property>
+    <property name="autoFillBackground">
+     <bool>true</bool>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actReset"/>
+   <addaction name="actSave"/>
+   <addaction name="separator"/>
+   <addaction name="useLine"/>
+   <addaction name="useEllipse"/>
+   <addaction name="usePoly"/>
+   <addaction name="useBezier"/>
+   <addaction name="useBspline"/>
+   <addaction name="separator"/>
+   <addaction name="useTrans"/>
+   <addaction name="useClip"/>
+   <addaction name="useRotate"/>
+   <addaction name="useScale"/>
+   <addaction name="separator"/>
+   <addaction name="actRed"/>
+   <addaction name="actGreen"/>
+   <addaction name="actBlue"/>
+  </widget>
+  <action name="useLine">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icons/icons/直线.png</normaloff>:/icons/icons/直线.png</iconset>
+   </property>
+   <property name="text">
+    <string>直线</string>
+   </property>
+   <property name="toolTip">
+    <string>直线</string>
+   </property>
+  </action>
+  <action name="useEllipse">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icons/icons/椭圆形.png</normaloff>:/icons/icons/椭圆形.png</iconset>
+   </property>
+   <property name="text">
+    <string>椭圆</string>
+   </property>
+   <property name="toolTip">
+    <string>椭圆</string>
+   </property>
+  </action>
+  <action name="actSave">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icons/icons/保存.png</normaloff>:/icons/icons/保存.png</iconset>
+   </property>
+   <property name="text">
+    <string>保存</string>
+   </property>
+  </action>
+  <action name="actReset">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icons/icons/刷新.png</normaloff>:/icons/icons/刷新.png</iconset>
+   </property>
+   <property name="text">
+    <string>刷新</string>
+   </property>
+  </action>
+  <action name="actRed">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icons/icons/红色.png</normaloff>:/icons/icons/红色.png</iconset>
+   </property>
+   <property name="text">
+    <string>红色</string>
+   </property>
+  </action>
+  <action name="actGreen">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icons/icons/绿色.png</normaloff>:/icons/icons/绿色.png</iconset>
+   </property>
+   <property name="text">
+    <string>绿色</string>
+   </property>
+  </action>
+  <action name="actBlue">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icons/icons/蓝色.png</normaloff>:/icons/icons/蓝色.png</iconset>
+   </property>
+   <property name="text">
+    <string>蓝色</string>
+   </property>
+  </action>
+  <action name="usePoly">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icons/icons/多边形.png</normaloff>:/icons/icons/多边形.png</iconset>
+   </property>
+   <property name="text">
+    <string>多边形</string>
+   </property>
+   <property name="toolTip">
+    <string>多边形</string>
+   </property>
+  </action>
+  <action name="useBezier">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icons/icons/曲线 贝塞尔.png</normaloff>:/icons/icons/曲线 贝塞尔.png</iconset>
+   </property>
+   <property name="text">
+    <string>贝塞尔曲线</string>
+   </property>
+   <property name="toolTip">
+    <string>贝塞尔曲线</string>
+   </property>
+  </action>
+  <action name="useBspline">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icons/icons/曲线 B样条.png</normaloff>:/icons/icons/曲线 B样条.png</iconset>
+   </property>
+   <property name="text">
+    <string>B样条曲线</string>
+   </property>
+   <property name="toolTip">
+    <string>B样条曲线</string>
+   </property>
+  </action>
+  <action name="useTrans">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icons/icons/平移.png</normaloff>:/icons/icons/平移.png</iconset>
+   </property>
+   <property name="text">
+    <string>平移</string>
+   </property>
+   <property name="toolTip">
+    <string>平移</string>
+   </property>
+  </action>
+  <action name="useRotate">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icons/icons/旋转.png</normaloff>:/icons/icons/旋转.png</iconset>
+   </property>
+   <property name="text">
+    <string>旋转</string>
+   </property>
+   <property name="toolTip">
+    <string>旋转</string>
+   </property>
+  </action>
+  <action name="useScale">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icons/icons/缩放.png</normaloff>:/icons/icons/缩放.png</iconset>
+   </property>
+   <property name="text">
+    <string>缩放</string>
+   </property>
+   <property name="toolTip">
+    <string>缩放</string>
+   </property>
+  </action>
+  <action name="useClip">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icons/icons/裁剪.png</normaloff>:/icons/icons/裁剪.png</iconset>
+   </property>
+   <property name="text">
+    <string>裁剪</string>
+   </property>
+   <property name="toolTip">
+    <string>裁剪</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
+ <connections/>
+</ui>
